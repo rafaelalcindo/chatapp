@@ -1,0 +1,33 @@
+.conversationSpace {
+    min-height: 60px;
+
+    padding-top: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageAvatar {
+    margin-left: 20px;
+}
+
+.messegeSender {
+    margin-left: 20px;
+
+    .nameAndDate {
+
+        .name {
+            color: #2171e8;
+            font-size: 17px;
+        }
+
+        .DateCreated {
+            font-size: 12px;
+        }
+    }
+
+    .chatMessage {
+        p {
+            font-size: 20px;
+        }
+    }
+}
