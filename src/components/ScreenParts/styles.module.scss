@@ -22,11 +22,21 @@
     width: 15%;
     height: 100vh;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
 
     h4 {
         margin-top: 10px;
         margin-bottom: 30px;
         cursor: pointer;
+    }
+
+    .link_chat {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        font-weight: 600;
     }
 }
 

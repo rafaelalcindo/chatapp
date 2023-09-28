@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 import stylesHome from './home.module.scss';
 
@@ -7,6 +8,9 @@ import { FaUser, FaKeyboard, FaHeadset } from 'react-icons/fa';
 import { Button } from '../components/Button';
 
 export default function Home() {
+
+  const router = useRouter();
+
   return (
     <div className={stylesHome.container}>
 
@@ -14,7 +18,7 @@ export default function Home() {
 
         <FaHeadset
           color={'#002db3'}
-          size={60}
+          size={80}
         />
 
         <div className={stylesHome.camposLogin}>
@@ -33,10 +37,12 @@ export default function Home() {
           />
           <br />
           <br />
+          <br />
 
           <Button
             type='button'
             nome='Entrar'
+            onClick={() => router.push('/painel')}
           />
 
         </div>

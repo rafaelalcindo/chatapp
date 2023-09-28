@@ -1,4 +1,5 @@
 import styles from './styles.module.scss';
+import Link from 'next/link';
 
 import Image from 'next/image';
 
@@ -35,12 +36,12 @@ export default function ScreenParts({ children }: LayoutScreen) {
                 </div>
 
                 <div className={styles.menuRightRooms}>
-                    <h4>#Sala reunião</h4>
-                    <h4>#Sala Principal</h4>
-                    <h4>#Sala Mestres</h4>
+                    <Link href={'/chatroom'} className={styles.link_chat} >#Sala reunião</Link>
+                    <Link href={'/chatroom'} className={styles.link_chat}>#Sala Principal</Link>
+                    <Link href={'/chatroom'} className={styles.link_chat}>#Sala Mestres</Link>
                     <hr />
-                    <h4>#Concetração</h4>
-                    <h4>#reunião</h4>
+                    <Link href={'/chatroom'} className={styles.link_chat}>#Concetração</Link>
+                    <Link href={'/chatroom'} className={styles.link_chat}>#reunião</Link>
 
                 </div>
 

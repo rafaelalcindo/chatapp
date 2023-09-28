@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     type: 'button' | 'submit';
     nome: string;
 }
