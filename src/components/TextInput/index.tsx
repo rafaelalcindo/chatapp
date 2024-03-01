@@ -11,7 +11,7 @@ export function TextInput({ label, id, name, type }: TextInputProps) {
 
     return (
         <section className={styles.container}>
-            <label>{label}:</label>
+            <label className={styles.label} >{label}:</label>
             <div className={styles.inputDiv}>
                 <input type={type} id={id} name={name} />
             </div>

@@ -6,7 +6,7 @@
     margin-top: 15px;
 
 
-    label {
+    .label {
         font-weight: 700;
         margin-bottom: 6px;
         color: var(--white);
@@ -22,7 +22,7 @@
         color: var(--gray-700);
         font-size: 18px;
         font-weight: 600;
-        border: 3px solid var(--blue-primary);
+        border: 3px solid var(--blue-button);
         border-radius: 40px;
 
         &:focus {

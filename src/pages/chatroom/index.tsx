@@ -39,7 +39,7 @@ export default function painel() {
                 </div>
                 <div className={styles.sendInput}>
                     <div className={styles.inputDiv}>
-                        <input type='text' className={styles.inputMessage} />
+                        <textarea className={styles.inputMessage} />
 
                         <FaPlay
                             className={styles.sendIcon}
